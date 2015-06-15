@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "CreateForum";
+}
+
+<h2>Create a new forum</h2>
+<h3>Please fill in ALL fields</h3>
+<fieldset>
+    @using (Ajax.BeginForm("CreateNewForum", "CreateForum", new AjaxOptions { UpdateTargetId = "divNewForumDeatils" }))
+    {
+        <div id="divNewForumDeatils"></div>
+        <ol>
+            <li>
+                @Html.Label("Title")
+                @Html.TextBox("Forumtitle")
+            </li>
+
+            <li>
+                @Html.Label("Admin")
+                @Html.TextBox("adminUserName")
+            </li>
+
+        </ol>
+        <button>Publish</button>
+    }
+</fieldset>
