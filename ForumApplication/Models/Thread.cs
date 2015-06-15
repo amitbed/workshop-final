@@ -19,8 +19,8 @@ namespace ForumApplication.Models
             {
                 this.ID = IdGen.generateThreadId();
                 this.Title = title;
-                this.Messages = new Dictionary<string,Message>();
-                Logger.logDebug(String.Format("A new thread has been created. ID: {0}, title: {1}",this.ID,this.Title));
+                this.Messages = new Dictionary<string, Message>();
+                Logger.logDebug(String.Format("A new thread has been created. ID: {0}, title: {1}", this.ID, this.Title));
             }
         }
 
@@ -62,7 +62,7 @@ namespace ForumApplication.Models
                     if ((m.Equals(messageID)) && (m.UserName.Equals(messageID)))
                     {
                         this.Messages.Remove(m.Title);
-                        Logger.logDebug(String.Format("Message has been removed. ID:{0}",m.ID));
+                        Logger.logDebug(String.Format("Message has been removed. ID:{0}", m.ID));
                         return true;
                     }
                 }

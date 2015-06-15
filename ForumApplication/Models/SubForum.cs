@@ -27,7 +27,7 @@ namespace ForumApplication.Models
                 if (String.IsNullOrEmpty(title))
                 {
                     Logger.logError("Failed to create a new sub-forum. Reason: title is empty");
-                } 
+                }
 
                 if (String.IsNullOrEmpty(parent))
                 {
@@ -60,6 +60,24 @@ namespace ForumApplication.Models
 
 
         //Methods
+
+
+        public Thread createThread(string title)
+        {
+            Thread t = new Thread(title);
+            Threads.Add(t.Title, t);
+            return t;
+        }
+
+        public bool isThreadExistsInSubForum(string threadTitle)
+        {
+            foreach (Thread t in Threads.Values)
+            {
+                if (t.Title.Equals(threadTitle))
+                    return true;
+            }
+            return false;
+        }
 
         public Forum getParentForum(string parentName)
         {

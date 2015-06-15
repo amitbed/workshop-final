@@ -15,7 +15,7 @@ namespace ForumApplication.Models
         public Dictionary<string, MemberSubForum> MemberSubForums { get; set; }
         public Dictionary<string, ModeratorSubForum> ModeratorSubForums { get; set; }
         public List<string> Admins { get; set; }
-        
+
         #endregion
 
         #region Ctor
@@ -46,6 +46,14 @@ namespace ForumApplication.Models
 
         #region Methods
 
+        //create subforum and assign to the cuurent forum
+        public SubForum createSubForum(string title, List<string> moderators, string parent, int maxModerators)
+        {
+            SubForum sf = new SubForum(title, moderators, parent, maxModerators);
+            SubForums.Add(title, sf);
+            return sf;
+        }
+
         //This method displays a forum's sub forums
         public string displaySubforums()
         {
@@ -59,7 +67,7 @@ namespace ForumApplication.Models
         }
 
         //This method adds a sub-forum to the current forum
-       
+
 
         public SubForum SearchSubForum(string sfName)
         {
