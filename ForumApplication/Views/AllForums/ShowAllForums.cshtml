@@ -3,15 +3,18 @@
 }
 
 <h2>ShowAllForums</h2>
- <p>Here are all the avialable forums</p>
+<p>Here are all the avialable forums</p>
 @{
     ForumApplication.Models.ForumSystem fs = ForumApplication.Models.ForumSystem.initForumSystem();
-    List<string> forums = fs.displayForums();
-    foreach (string s in forums)
+    string[] forums = fs.displayForums().Split(' ');
+
+    for (int i = 0; i < forums.Length; i++)
     {
-       <p>@s</p>
+        if (!(forums[i]).IsEmpty())
+        {
+            @Html.ActionLink(forums[i], "ShowAllSubForums", "ShowAllSubForums");
+        }
     }
 }
-@Html.ActionLink("Create a forum", "CreateForum", "CreateForum", new { Name = "Example1" }, new { id = "link1" });
 
-@Html.ActionLink("Forum", "ShowAllThreads", "Forum", new { Name = "Example2" }, new { id = "link2" });
+@Html.ActionLink("Create a forum", "CreateForum", "CreateForum");

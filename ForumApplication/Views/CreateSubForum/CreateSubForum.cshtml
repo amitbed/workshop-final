@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "CreateSubForum";
+}
+
+<h2>Create Sub Forum</h2>
+
+<h3>Please fill in ALL fields</h3>
+<fieldset>
+    @using (Ajax.BeginForm("Create NewSub Fourm", "CreateNewSubFourm", new AjaxOptions { UpdateTargetId = "divNewSubForumDeatils" }))
+    {
+        <div id="divNewForumDeatils"></div>
+        <ol>
+            <li>
+                @Html.Label("Title")
+                @Html.TextBox("SubForumtitle")
+            </li>
+
+            <li>
+                @Html.Label("Moderators")
+                @Html.TextBox("moderators")
+            </li>
+
+            <li>
+                @Html.Label("Parent")
+                @Html.TextBox("parent")
+            </li>
+
+            <li>
+                @Html.Label("Max Moderators")
+                @Html.TextBox("maxModerators")
+            </li>
+
+        </ol>
+        <button>Publish</button>
+    }
+</fieldset>

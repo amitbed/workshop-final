@@ -184,8 +184,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AllForumsController.cs" />
     <Compile Include="Controllers\CreateForumController.cs" />
+    <Compile Include="Controllers\CreateSubForumController.cs" />
     <Compile Include="Controllers\ForumController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ShowAllSubForums.cs" />
+    <Compile Include="Controllers\ShowAllThreadsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -335,6 +338,10 @@
     <Content Include="Views\CreateForum\CreateForum.cshtml" />
     <Content Include="Views\Forum\ShowAllThreads.cshtml" />
     <Content Include="Views\CreateForum\CreateNewForum.cshtml" />
+    <Content Include="Views\CreateSubForum\CreateNewSubFourm.cshtml" />
+    <Content Include="Views\CreateSubForum\CreateSubForum.cshtml" />
+    <Content Include="Views\ShowAllThreads\ShowAllThreads.cshtml" />
+    <Content Include="Views\ShowAllSubForums\ShowAllSubForums.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
