@@ -95,7 +95,7 @@ namespace ForumApplication.Models
                     if (user.GetType().Name.Equals("Member"))
                     {
                         Member newUser = (Member)user;
-                        if (subForumToEnter.Moderators.Contains(newUser.ID))
+                        if (subForumToEnter.Moderators.Contains(newUser.Username))
                         {
                             Logger.logDebug(String.Format("{0} enterd to sub forum {1} as moderator", this.ID, subForumName));
                             return ModeratorSubForums[subForumName];
