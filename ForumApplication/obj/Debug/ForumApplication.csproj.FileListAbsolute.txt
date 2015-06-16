@@ -321,7 +321,6 @@ C:\Users\deana.HAIFA\Documents\GitHub\workshop-mvc\ForumApplication\ForumApplica
 \\psf\Home\Desktop\workshop-final\ForumApplication\bin\ru\System.Spatial.resources.dll
 \\psf\Home\Desktop\workshop-final\ForumApplication\bin\zh-Hans\System.Spatial.resources.dll
 \\psf\Home\Desktop\workshop-final\ForumApplication\bin\zh-Hant\System.Spatial.resources.dll
-\\psf\Home\Desktop\workshop-final\ForumApplication\obj\Debug\ForumApplication.csprojResolveAssemblyReference.cache
 \\psf\Home\Desktop\workshop-final\ForumApplication\obj\Debug\ForumApplication.dll
 \\psf\Home\Desktop\workshop-final\ForumApplication\obj\Debug\ForumApplication.pdb
 C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\obj\Debug\ForumApplication.dll

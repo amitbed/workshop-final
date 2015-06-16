@@ -9,6 +9,6 @@ namespace ForumApplication.Models
     interface IGuestManager
     {
         string register(string username, string password, string email);
-        List<string> login(string username, string password);
+        string login(string username, string password);
     }
 }

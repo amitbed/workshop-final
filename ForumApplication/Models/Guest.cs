@@ -41,7 +41,7 @@ namespace ForumApplication.Models
             return true;
         }
 
-        public List<string> login(string username, string password)
+        public string login(string username, string password)
         {
             if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password))
             {

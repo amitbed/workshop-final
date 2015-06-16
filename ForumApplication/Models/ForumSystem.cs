@@ -47,16 +47,7 @@ namespace ForumApplication.Models
             //admins.Add("username2");
             //Forum forum = new Forum("Sports", admins);
             //repository = new ForumSystemRepository();
-<<<<<<< HEAD
-            ////testRepository = new ForumSystemRepository("TestForumDBContext");
-            ////repository.dbAddMember(member,false);
-            ////repository.dbAddMember(member2,false);
-            ////repository.dbRemoveMember("username",isProd);
-            ////repository.dbAddMessage(message, isProd);
-            ////repository.dbAddMessage(message2,isProd);
-            ////repository.dbRemoveMessage("message1", isProd);
-            ////repository.dbAddForum(forum,false);
-=======
+
             //testRepository = new ForumSystemRepository("TestForumDBContext");
             //repository.dbAddMember(member,false);
             //repository.dbAddMember(member2,false);
@@ -65,7 +56,7 @@ namespace ForumApplication.Models
             //repository.dbAddMessage(message2,isProd);
             //repository.dbRemoveMessage("message1", isProd);
             //repository.dbAddForum(forum,false);
->>>>>>> origin/master
+
             //repository.dbAddMember(member3, true);
             //repository.dbIsMemberExists("ggg");
         }
@@ -119,14 +110,14 @@ namespace ForumApplication.Models
         }
 
         //This method displays all the forums in the system
-        public List<string> displayForums()
+        public string displayForums()
         {
-            List<string> forums = new List<string>();
+            string res = "";
             foreach (string forumName in Forums.Keys)
             {
-                forums.Add(forumName);
+                res = res +" "+ forumName;
             }
-            return forums;
+            return res;
         }
 
         public Member addMember(string username, string password, string email)
