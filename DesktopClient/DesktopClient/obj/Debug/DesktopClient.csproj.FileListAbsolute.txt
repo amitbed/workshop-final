@@ -1,1 +1,0 @@
-\\psf\Home\Desktop\workshop-final\DesktopClient\DesktopClient\bin\Debug\DesktopClient.exe.config

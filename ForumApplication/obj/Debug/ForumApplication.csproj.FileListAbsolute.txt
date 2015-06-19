@@ -402,4 +402,8 @@ C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc
 C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\obj\Debug\ForumApplication.pdb
+<<<<<<< HEAD
 \\psf\Home\Desktop\workshop-final\ForumApplication\obj\Debug\ForumApplication.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\obj\Debug\ForumApplication.csprojResolveAssemblyReference.cache
+>>>>>>> origin/master
