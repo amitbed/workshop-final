@@ -1,5 +1,0 @@
-\\psf\Home\Documents\Visual Studio 2013\Projects\ForumApplication\ForumSystem\bin\Release\ForumSystem.exe.config
-\\psf\Home\Documents\Visual Studio 2013\Projects\ForumApplication\ForumSystem\bin\Release\ForumSystem.exe
-\\psf\Home\Documents\Visual Studio 2013\Projects\ForumApplication\ForumSystem\bin\Release\ForumSystem.pdb
-\\psf\Home\Documents\Visual Studio 2013\Projects\ForumApplication\ForumSystem\obj\Release\ForumSystem.exe
-\\psf\Home\Documents\Visual Studio 2013\Projects\ForumApplication\ForumSystem\obj\Release\ForumSystem.pdb
