@@ -18,11 +18,13 @@ namespace ForumApplication.Models
         private long TimeToUpgrade { get; set; }
         private long MessagesToUpgrade { get; set; }
         private ForumSystemRepository repository;
+        private ForumSystemRepository testRepository;
+        bool isProd = false;
+
 
         //Constructor
         private ForumSystem()
         {
-            bool isProd = false;
             Logger log = new Logger();
             Members = new Dictionary<string, Member>();
             Forums = new Dictionary<string, Forum>();
@@ -30,39 +32,10 @@ namespace ForumApplication.Models
             Logger.logDebug(string.Format("A new forum system has been created"));
             var DailyTime = "00:00:00";
             var timeParts = DailyTime.Split(new char[1] { ';' });
-        /*    using (var db = new ForumDBContext())
-            {
-                ForumSystemRepository repository = new ForumSystemRepository();
-                Member member = new Member("username", "password", "email@email.com");
-                repository.dbAddMember(member);
-                repository.dbRemoveMember("member1");
-            }*/
-            //Member member = new Member("username", "password", "email@email.com");
-            //Member member2 = new Member("username2", "password", "email2@email.com");
-            //Member member3 = new Member("username3", "password", "email3@email.com");
-            //Message message = new Message("Message1", "test", "userName1");
-            //Message message2 = new Message("Message2", "test", "userName1");
-            //List<string> admins = new List<string>();
-            //admins.Add("username");
-            //admins.Add("username2");
-            //Forum forum = new Forum("Sports", admins);
-            //repository = new ForumSystemRepository();
-
-            //testRepository = new ForumSystemRepository("TestForumDBContext");
-            //repository.dbAddMember(member,false);
-            //repository.dbAddMember(member2,false);
-            //repository.dbRemoveMember("username",isProd);
-            //repository.dbAddMessage(message, isProd);
-            //repository.dbAddMessage(message2,isProd);
-            //repository.dbRemoveMessage("message1", isProd);
-            //repository.dbAddForum(forum,false);
-
-            //repository.dbAddMember(member3, true);
-            //repository.dbIsMemberExists("ggg");
+            repository = new ForumSystemRepository();
+            testRepository = new ForumSystemRepository("TestForumDBContext");
         }
 
-
-        //Methods
         public static ForumSystem initForumSystem()
         {
             if (forumSystem == null)
@@ -148,8 +121,8 @@ namespace ForumApplication.Models
                 }
                 else
                 {
-                  //  repository.dbAddMember(toAdd);
-                  //  Members.Add(toAdd.Username, toAdd);
+                    repository.dbAddMember(toAdd,isProd);
+                    Members.Add(toAdd.Username, toAdd);
                     Logger.logDebug(String.Format("A new member has been added. username: {0}, password: {1}, email: {2}", toAdd.Username, password, email));
                     return toAdd;
                 }
