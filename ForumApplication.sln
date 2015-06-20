@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApplication", "ForumApplication\ForumApplication.csproj", "{DC95B179-A540-43F4-9F94-87CEFA0995E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumTests", "..\workshoptest\ForumTests\ForumTests.csproj", "{1750B3B0-57C6-4CB4-B47A-568403335A5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,10 @@ Global
 		{DC95B179-A540-43F4-9F94-87CEFA0995E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC95B179-A540-43F4-9F94-87CEFA0995E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC95B179-A540-43F4-9F94-87CEFA0995E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1750B3B0-57C6-4CB4-B47A-568403335A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1750B3B0-57C6-4CB4-B47A-568403335A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1750B3B0-57C6-4CB4-B47A-568403335A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1750B3B0-57C6-4CB4-B47A-568403335A5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
