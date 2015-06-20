@@ -108,5 +108,24 @@ namespace ForumApplication.Models
                 return ans;
             }
         }
+
+        public void changeSettings(string nusername, string npassword, string nemail)
+        {
+            if (nusername != null){
+                // Need to add check that this user name is not already exists in DB
+                this.Username = nusername;
+                Logger.logDebug(String.Format("the username for {0} has been changed to: {1}", Username));
+            }
+            if (npassword != null)
+            {
+                changePassword(npassword);
+            }
+            if (nemail != null)
+            {
+                this.Email = nemail;
+                Logger.logDebug(String.Format("the email for {0} has been changed to: {1}", Email));
+
+            }
+        }
     }
 }
