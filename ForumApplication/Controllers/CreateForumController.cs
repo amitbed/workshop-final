@@ -19,7 +19,7 @@ namespace ForumApplication.Controllers
         public ActionResult CreateNewForum()
         {
             string title = Request["Forumtitle"].ToString();
-            string admin = Request["Forumtitle"].ToString();
+            string admin = Request["adminUserName"].ToString();
             List<string> admins = new List<string>();
             admins.Add(admin);
             ForumSystem fs = ForumSystem.initForumSystem();

@@ -81,7 +81,7 @@ namespace ForumApplication.Models
                 }
             }
         }
-
+        
         //This method displays all the forums in the system
         public string displayForums()
         {
@@ -92,7 +92,7 @@ namespace ForumApplication.Models
             }
             return res;
         }
-
+        
         public Member addMember(string username, string password, string email)
         {
             if ((String.IsNullOrEmpty(username)) || (String.IsNullOrEmpty(password)) || (String.IsNullOrEmpty(email)))
@@ -121,7 +121,12 @@ namespace ForumApplication.Models
                 }
                 else
                 {
+<<<<<<< Updated upstream
                     repository.dbAddMember(toAdd,isProd);
+=======
+                    ForumSystemRepository repository = new ForumSystemRepository();
+                    repository.dbAddMember(toAdd,true);
+>>>>>>> Stashed changes
                     Members.Add(toAdd.Username, toAdd);
                     Logger.logDebug(String.Format("A new member has been added. username: {0}, password: {1}, email: {2}", toAdd.Username, password, email));
                     return toAdd;

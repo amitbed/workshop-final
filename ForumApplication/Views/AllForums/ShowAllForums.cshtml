@@ -3,18 +3,27 @@
 }
 
 <h2>ShowAllForums</h2>
-<p>Here are all the avialable forums</p>
-@{
-    ForumApplication.Models.ForumSystem fs = ForumApplication.Models.ForumSystem.initForumSystem();
-    string[] forums = fs.displayForums().Split(' ');
 
-    for (int i = 0; i < forums.Length; i++)
+@{
+    object username = this.ViewContext.RouteData.Values["id"];
+    if (((string)username).Equals("guest"))
     {
-        if (!(forums[i]).IsEmpty())
-        {
-            @Html.ActionLink(forums[i], "ShowAllSubForums", "ShowAllSubForums");
-        }
+        <p>Only registered users can view this</p>
     }
+    else{
+        <p>Here are all the avialable forums</p>
+        ForumApplication.Models.ForumSystem fs = ForumApplication.Models.ForumSystem.initForumSystem();
+        string[] forums = fs.displayForums().Split(' ');
+
+        for (int i = 0; i < forums.Length; i++)
+        {
+            if (!(forums[i]).IsEmpty())
+            {
+                @Html.ActionLink(forums[i], "ShowAllSubForums", "ShowAllSubForums");
+            }
+        }
+        @Html.ActionLink("Create a forum", "CreateForum", "CreateForum");
+    }
+    
 }
 
-@Html.ActionLink("Create a forum", "CreateForum", "CreateForum");

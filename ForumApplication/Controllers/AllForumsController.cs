@@ -9,9 +9,9 @@ namespace ForumApplication.Controllers
     public class AllForumsController : Controller
     {
 
-        public ActionResult ShowAllForums()
+        public ActionResult ShowAllForums(string username)
         {
-            return View();
+            return View(username);
         }
 
     }

@@ -26,7 +26,7 @@ namespace ForumApplication.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
-
+        
         //
         // POST: /Account/Login
 
@@ -79,7 +79,10 @@ namespace ForumApplication.Controllers
                 // Attempt to register the user
                 try
                 {
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
+                    string username = model.UserName;
+                    string password = model.Password;
+                    ForumSystem fs = ForumSystem.initForumSystem();
+                    Member m= fs.addMember(username, password, "bla@bla.com");
                     WebSecurity.Login(model.UserName, model.Password);
                     return RedirectToAction("Index", "Home");
                 }
