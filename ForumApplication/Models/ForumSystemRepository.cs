@@ -149,19 +149,19 @@ namespace ForumApplication.Models
         }
 
         //FIX
-        public void dbAddSubForum(SubForum subForum, ForumSubforumIntermediate intermediate, bool isProd)
-        {
-            using (var dbContext = new ForumDBContext())
-            {
-                if (!isProd)
-                {
-                    dbContext.ChangeDatabaseTo("TestForumDBContext");
-                }
-                dbContext.SubForums.Add(subForum);
-                dbContext.forumsToSubForums.Add(intermediate);
-                dbContext.SaveChanges();
-            }
-        }
+        //public void dbAddSubForum(SubForum subForum, ForumSubforumIntermediate intermediate, bool isProd)
+        //{
+        //    using (var dbContext = new ForumDBContext())
+        //    {
+        //        if (!isProd)
+        //        {
+        //            dbContext.ChangeDatabaseTo("TestForumDBContext");
+        //        }
+        //        dbContext.SubForums.Add(subForum);
+        //        dbContext.forumsToSubForums.Add(intermediate);
+        //        dbContext.SaveChanges();
+        //    }
+        //}
 
         //TO DO
         public void dbRemoveSubForum(string subForumID, bool isProd)

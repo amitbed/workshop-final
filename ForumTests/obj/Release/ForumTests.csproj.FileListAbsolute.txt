@@ -1,0 +1,12 @@
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\ForumTests.dll.config
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\ForumTests.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\ForumTests.pdb
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\EntityFramework.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\ForumApplication.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\EntityFramework.xml
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Release\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\obj\Release\ForumTests.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\obj\Release\ForumTests.pdb

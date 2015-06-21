@@ -487,4 +487,3 @@ C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\bin\zh-Hans\Syste
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\obj\Debug\ForumApplication.dll
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\obj\Debug\ForumApplication.pdb
-C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\obj\Debug\ForumApplication.csprojResolveAssemblyReference.cache
