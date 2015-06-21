@@ -10,6 +10,7 @@ namespace ForumApplication.Models
 {
     public class ForumSystem
     {
+        public static string superadmin= "superadmin";
         private static ForumSystem forumSystem = null;
         public Dictionary<string, Forum> Forums { get; set; }
         public Dictionary<string, Forum> AdminsForums { get; set; }
@@ -25,6 +26,7 @@ namespace ForumApplication.Models
         //Constructor
         private ForumSystem()
         {
+           
             Logger log = new Logger();
             Members = new Dictionary<string, Member>();
             Forums = new Dictionary<string, Forum>();
@@ -50,18 +52,23 @@ namespace ForumApplication.Models
 
 
         //This method adds a forum to the main forum system
-        public void createForum(Forum forum)
+        public bool createForum(Forum forum, string username)
         {
-            if (forum == null)
-            {
-                Logger.logError("Failed to add a new forum. Reason: forum is null");
-            }
+            if (username.Equals(ForumApplication.Models.ForumSystem.superadmin))
+                if (forum == null)
+                {
+                    Logger.logError("Failed to add a new forum. Reason: forum is null");
+                    return false;
+                }
+                else
+                {
+                    Forums.Add(forum.Title, forum);
+                    AdminsForums.Add(forum.Title, new AdminForum(forum));
+                    Logger.logDebug(String.Format("A new forum has been added to forum system. ID: {0}, Title: {1}", forum.ID, forum.Title));
+                    return true;
+                }
             else
-            {
-                Forums.Add(forum.Title, forum);
-                AdminsForums.Add(forum.Title, new AdminForum(forum));
-                Logger.logDebug(String.Format("A new forum has been added to forum system. ID: {0}, Title: {1}", forum.ID, forum.Title));
-            }
+                return false;
         }
 
         public void checkMembersForUpgrade()
@@ -121,12 +128,8 @@ namespace ForumApplication.Models
                 }
                 else
                 {
-<<<<<<< Updated upstream
-                    repository.dbAddMember(toAdd,isProd);
-=======
                     ForumSystemRepository repository = new ForumSystemRepository();
                     repository.dbAddMember(toAdd,true);
->>>>>>> Stashed changes
                     Members.Add(toAdd.Username, toAdd);
                     Logger.logDebug(String.Format("A new member has been added. username: {0}, password: {1}, email: {2}", toAdd.Username, password, email));
                     return toAdd;

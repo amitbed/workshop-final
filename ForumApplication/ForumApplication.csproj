@@ -225,6 +225,7 @@
     <Compile Include="Models\Thread.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Status.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -347,9 +348,11 @@
     <Content Include="Views\CreateSubForum\CreateSubForum.cshtml" />
     <Content Include="Views\ShowAllThreads\ShowAllThreads.cshtml" />
     <Content Include="Views\ShowAllSubForums\ShowAllSubForums.cshtml" />
+    <Content Include="Views\OnlySuperAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\OnlySuperAdmin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -9,7 +9,7 @@ namespace ForumApplication.Models
    public class Guest : User, IGuestManager 
     {
         private ForumSystem forumSystem = ForumSystem.initForumSystem();
-
+        public string Username = "guest";
         public string register(string username, string password, string email)
         {
             //approveEmail()

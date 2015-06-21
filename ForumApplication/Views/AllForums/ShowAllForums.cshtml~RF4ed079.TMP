@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "ShowAllForums";
+}
+
+<h2>ShowAllForums</h2>
+
+@{
+    object username = this.ViewContext.RouteData.Values["id"];
+        <p>Here are all the avialable forums</p>
+        ForumApplication.Models.ForumSystem fs = ForumApplication.Models.ForumSystem.initForumSystem();
+        string[] forums = fs.displayForums().Split(' ');
+
+        for (int i = 0; i < forums.Length; i++)
+        {
+            if (!(forums[i]).IsEmpty())
+            {
+                @Html.ActionLink(forums[i], "ShowAllSubForums", "ShowAllSubForums");
+            }
+        }
+
+            this.ViewData["username"] = "guest";
+        
+        @Html.ActionLink("Create a forum", "CreateForum", "CreateForum", new { id = this.ViewContext.RouteData.Values["id"] }, null);
+    @*}*@
+        
+
+}
+

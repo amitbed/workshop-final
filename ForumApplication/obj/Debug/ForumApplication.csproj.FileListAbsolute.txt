@@ -402,7 +402,6 @@ C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc
 C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Amit\Documents\university\שנה ג\סמסטר ו\סדנא\workshop-mvc\workshop-final\ForumApplication\obj\Debug\ForumApplication.pdb
-\\psf\Home\Desktop\workshop-final\ForumApplication\obj\Debug\ForumApplication.csprojResolveAssemblyReference.cache
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\bin\ForumApplication.dll.config
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\bin\ForumApplication.dll
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\bin\ForumApplication.pdb
