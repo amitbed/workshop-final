@@ -1,0 +1,45 @@
+01/06/2015 21:40:30 Debug: A new forum system has been created
+01/06/2015 21:40:30 Debug: New member id has been generated: 1
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member1 username: benshnof, password: matanShoham, email: benshnof@post.bgu.ac.il
+01/06/2015 21:40:30 Debug: A new member has been added. ID: member1, username: benshnof, password: matanShoham, email: benshnof@post.bgu.ac.il
+01/06/2015 21:40:30 Debug: New member id has been generated: 2
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member2 username: benshnof, password: matanShoham, email: benshnof@post.bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: Member: ID:member1 usernamer:benshnof has logged in
+01/06/2015 21:40:30 Debug: New member id has been generated: 3
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member3 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A new member has been added. ID: member3, username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: New member id has been generated: 4
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member4 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: New member id has been generated: 5
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member5 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: New member id has been generated: 6
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member6 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: New member id has been generated: 7
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member7 username: aaa, password: bbb, email: ccc
+01/06/2015 21:40:30 Debug: New member id has been generated: 8
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member8 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: New member id has been generated: 9
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member9 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: New member id has been generated: 10
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member10 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: New member id has been generated: 11
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member11 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: the password for ifateli has been changed to: Neta
+01/06/2015 21:40:30 Debug: New member id has been generated: 12
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member12 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Error: the password: gilAd has already been used
+01/06/2015 21:40:30 Debug: New member id has been generated: 13
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member13 username: ifateli, password: gilAd, email: ifateli@bgu.ac.il
+01/06/2015 21:40:30 Debug: A Member with the same user name alredy exist
+01/06/2015 21:40:30 Debug: the password for ifateli has been changed to: IFAT
+01/06/2015 21:40:30 Debug: New member id has been generated: 14
+01/06/2015 21:40:30 Debug: A new user has been created. ID: member14 username: ifateli, password: gilAd, ema

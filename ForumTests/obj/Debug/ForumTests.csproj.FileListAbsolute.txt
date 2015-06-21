@@ -1,0 +1,13 @@
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\ForumTests.dll.config
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\ForumTests.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\ForumTests.pdb
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\EntityFramework.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\ForumApplication.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\EntityFramework.xml
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\obj\Debug\ForumTests.csprojResolveAssemblyReference.cache
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\obj\Debug\ForumTests.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\ForumTests\obj\Debug\ForumTests.pdb

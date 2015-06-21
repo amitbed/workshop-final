@@ -1,0 +1,7 @@
+C:\Users\ifat\Desktop\Project1\workshoptest\unitTestingDevelopers\bin\Debug\unitTestingDevelopers.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\unitTestingDevelopers\bin\Debug\unitTestingDevelopers.pdb
+C:\Users\ifat\Desktop\Project1\workshoptest\unitTestingDevelopers\bin\Debug\ForumSystem.exe
+C:\Users\ifat\Desktop\Project1\workshoptest\unitTestingDevelopers\bin\Debug\ForumSystem.pdb
+C:\Users\ifat\Desktop\Project1\workshoptest\unitTestingDevelopers\obj\Debug\unitTestingDevelopers.dll
+C:\Users\ifat\Desktop\Project1\workshoptest\unitTestingDevelopers\obj\Debug\unitTestingDevelopers.pdb
+C:\Users\ifat\Desktop\Project1\workshoptest\unitTestingDevelopers\obj\Debug\unitTestingDevelopers.csprojResolveAssemblyReference.cache
