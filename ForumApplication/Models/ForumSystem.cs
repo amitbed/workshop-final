@@ -54,7 +54,7 @@ namespace ForumApplication.Models
         //This method adds a forum to the main forum system
         public bool createForum(Forum forum, string username)
         {
-            if (username.Equals(ForumApplication.Models.ForumSystem.superadmin))
+            //if (username.Equals(ForumApplication.Models.ForumSystem.superadmin))
                 if (forum == null)
                 {
                     Logger.logError("Failed to add a new forum. Reason: forum is null");
@@ -67,8 +67,8 @@ namespace ForumApplication.Models
                     Logger.logDebug(String.Format("A new forum has been added to forum system. ID: {0}, Title: {1}", forum.ID, forum.Title));
                     return true;
                 }
-            else
-                return false;
+            //else
+            //    return false;
         }
 
         public void checkMembersForUpgrade()

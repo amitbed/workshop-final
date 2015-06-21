@@ -488,3 +488,4 @@ C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\bin\zh-Hant\Syste
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\obj\Debug\ForumApplication.dll
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\obj\Debug\ForumApplication.pdb
 C:\Users\ifat\Desktop\Project1\workshop-final\ForumApplication\obj\Debug\ForumApplication.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\workshop-final\ForumApplication\obj\Debug\ForumApplication.csprojResolveAssemblyReference.cache
