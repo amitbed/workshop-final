@@ -26,7 +26,7 @@ namespace ForumApplication.Models
             var query = from mem in db.Members where mem.Username == username select mem;
             var member = query.FirstOrDefault();
         }
-        
+
         /*public void dbRetrieveLastID()
         {
             if
@@ -73,8 +73,8 @@ namespace ForumApplication.Models
                     dbContext.ChangeDatabaseTo("TestForumDBContext");
                 }
                 var message = (from m in dbContext.Messages
-                              where m.ID == messageID
-                              select m).FirstOrDefault();
+                               where m.ID == messageID
+                               select m).FirstOrDefault();
                 dbContext.Messages.Remove(message);
                 dbContext.SaveChanges();
             }
@@ -141,15 +141,15 @@ namespace ForumApplication.Models
                     dbContext.ChangeDatabaseTo("TestForumDBContext");
                 }
                 var forum = (from f in dbContext.Forums
-                              where f.ID == forumID
-                              select f).FirstOrDefault();
+                             where f.ID == forumID
+                             select f).FirstOrDefault();
                 dbContext.Forums.Remove(forum);
                 dbContext.SaveChanges();
             }
         }
 
         //FIX
-        public void dbAddSubForum(SubForum subForum, bool isProd)
+        public void dbAddSubForum(SubForum subForum, ForumSubforumIntermediate intermediate, bool isProd)
         {
             using (var dbContext = new ForumDBContext())
             {
@@ -158,6 +158,7 @@ namespace ForumApplication.Models
                     dbContext.ChangeDatabaseTo("TestForumDBContext");
                 }
                 dbContext.SubForums.Add(subForum);
+                dbContext.forumsToSubForums.Add(intermediate);
                 dbContext.SaveChanges();
             }
         }
@@ -172,10 +173,93 @@ namespace ForumApplication.Models
                     dbContext.ChangeDatabaseTo("TestForumDBContext");
                 }
                 var subForum = (from sf in dbContext.SubForums
-                             where sf.ID == subForumID
-                             select sf).FirstOrDefault();
+                                where sf.ID == subForumID
+                                select sf).FirstOrDefault();
                 dbContext.SubForums.Remove(subForum);
                 dbContext.SaveChanges();
+            }
+        }
+
+        public void cacheMembers(Dictionary<string, Member> dictionary, bool isProd)
+        {
+            using (var dbContext = new ForumDBContext())
+            {
+                if (!isProd)
+                {
+                    dbContext.ChangeDatabaseTo("TestForumDBContext");
+                }
+                var query = from m in dbContext.Members
+                            select m;
+                foreach (var m in query)
+                {
+                    dictionary.Add(m.Username, m);
+                }
+            }
+        }
+        public void cacheForums(Dictionary<string, Forum> dictionary, bool isProd)
+        {
+            using (var dbContext = new ForumDBContext())
+            {
+                if (!isProd)
+                {
+                    dbContext.ChangeDatabaseTo("TestForumDBContext");
+                }
+                var query = from f in dbContext.Forums
+                            select f;
+                foreach (var f in query)
+                {
+                    dictionary.Add(f.ID, f);
+                    //cacheSubForums(f.SubForums,f,isProd);
+                }
+            }
+        }
+        public void cacheSubForums(Dictionary<string, SubForum> dictionary, string subForumID, bool isProd)
+        {
+            using (var dbContext = new ForumDBContext())
+            {
+                if (!isProd)
+                {
+                    dbContext.ChangeDatabaseTo("TestForumDBContext");
+                }
+                var query = from sf in dbContext.SubForums
+                            select sf;
+                foreach (var sf in query)
+                {
+                    dictionary.Add(sf.ID, sf);
+                    cacheThreads(sf.Threads, isProd);
+                }
+            }
+        }
+        public void cacheThreads(Dictionary<string, Thread> dictionary, bool isProd)
+        {
+            using (var dbContext = new ForumDBContext())
+            {
+                if (!isProd)
+                {
+                    dbContext.ChangeDatabaseTo("TestForumDBContext");
+                }
+                var query = from t in dbContext.Threads
+                            select t;
+                foreach (var t in query)
+                {
+                    dictionary.Add(t.ID, t);
+                }
+            }
+        }
+        public void cacheMessages(Dictionary<string, Message> dictionary, bool isProd)
+        {
+            using (var dbContext = new ForumDBContext())
+            {
+                if (!isProd)
+                {
+                    dbContext.ChangeDatabaseTo("TestForumDBContext");
+                }
+                var query = from m in dbContext.Messages
+                            select m;
+                foreach (var m in query)
+                {
+                    dictionary.Add(m.ID, m);
+                }
             }
         }
     }
