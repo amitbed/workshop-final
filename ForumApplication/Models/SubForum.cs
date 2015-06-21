@@ -42,7 +42,7 @@ namespace ForumApplication.Models
             {
                 if (moderators.Count <= maxModerators)
                 {
-                    this.ID = IdGen.generateSubForumId();
+                    //this.ID = IdGen.generateSubForumId();
                     this.Threads = new Dictionary<string, Thread>();
                     this.Title = title;
                     this.MaxModerators = maxModerators + (getParentForum(parent)).Admins.Count;
@@ -82,7 +82,14 @@ namespace ForumApplication.Models
         public Forum getParentForum(string parentName)
         {
             ForumSystem forumSystem = ForumSystem.initForumSystem();
-            return forumSystem.Forums[parentName];
+            if (forumSystem.Forums.ContainsKey(parentName))
+            {
+                return forumSystem.Forums[parentName];
+            }
+            else
+            {
+                return null;
+            }
         }
 
         //This method displays a sub-forum's threads
